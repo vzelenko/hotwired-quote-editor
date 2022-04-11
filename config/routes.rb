@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :quotes
-  root "quotes#index"
+  root 'quotes#index'
 end
